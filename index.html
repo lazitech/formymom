@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.4, maximum-scale=1.0, user-scalable=no">
+    <title>csh Happy BirthDay</title>
+    <link rel="shortcut icon" href="./assets/image/icon.svg">
+    <link rel="stylesheet" href="css/style1.css" type="text/css">
+    <style>
+        #overlayImage {
+            max-width: 100%;
+            max-height: 100%;
+            display: none;
+            z-index: 1;
+          
+        }
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* 防止页面滚动 */
+            /* background-color: black; */
+        }
+
+        #myCanvas {
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+    </style>
+</head>
+
+<!-- <p class="text" style="color: #ed3073;">
+    双击屏幕播放生日祝福歌
+</p> -->
+
+<body>
+    <audio id="bgaudio" autoplay preload loop src="./assets/music/生日祝福歌.mp3" hidden="true"></audio>
+    <script src="js/play_music.js"></script>
+    <canvas  class="canvas" width="19200" height="12800"></canvas>
+    <script src="js/show_date_time.js"></script>
+    <script src="js/render.js"></script>
+    <!-- <script src="js/color_bg_effect.js"></script> -->
+    <script src="js/click_effect.js"></script> 
+    <!--鼠标点击爆炸五颜六色特效-->
+    <canvas class="fireworks" style="position:fixed;left:0;top:0;z-index:99999999;pointer-events:none;"></canvas>
+    <script src="js/anime.min.js"></script>
+    <script src="js/fireworks.js"></script>
+    <img id="overlayImage" src="chat.jpg">
+    <script>
+        // 延迟 5 秒后跳转到其他地址
+        setTimeout(function() {
+            window.location.href = 'http://matrixcalc.xyz'; // 将地址替换为您要跳转的目标地址
+        }, 34000); // 延迟 5000 毫秒（即 5 秒）
+    </script>
+</body>
+
+</html>
