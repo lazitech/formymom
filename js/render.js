@@ -3,7 +3,7 @@ var S = {
         S.Drawing.init('.canvas');
         document.body.classList.add('body--ready');
         // 文字切换
-        S.UI.simulate("现在是|2024年|1月29日|#time|祝|可爱的|csh|19岁|生日快乐|#countdown 3|Happy birthday！");
+        S.UI.simulate("现在是|2024年|5月12日|#time|祝|亲爱的妈妈|母亲节快乐|#countdown 3|Happy Mother's Day!");
         S.Drawing.loop(function () {
             S.Shape.render();
         });
